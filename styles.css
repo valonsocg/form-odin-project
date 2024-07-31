@@ -1,0 +1,193 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  background-color: #202020;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: Norse-bold;
+  src: url(./assets/fonts/Norse-Bold.otf);
+}
+
+.container {
+  display: flex;
+  width: 60vw;
+}
+
+aside {
+  background-image: url(./assets/background\ green.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.background-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  top: 20vh;
+}
+
+.background-logo > span {
+  font-family: "Norse-bold";
+  font-size: 5vw;
+}
+
+img {
+  width: 5vw;
+}
+
+footer {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Roboto Condensed";
+  width: 60%;
+  background-color: #f1f1ef;
+}
+
+header {
+  font-size: 2.1rem;
+  font-weight: 500;
+  padding: 20px;
+}
+
+header p {
+  margin: 1.6rem;
+}
+
+header span {
+  font-style: italic;
+}
+
+form {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-container {
+  width: 100%;
+  box-shadow: 1px 5px 6px 0px rgba(0, 0, 0, 0.58);
+  background-color: #fafafaf1;
+  padding: 50px;
+}
+
+legend {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0px 45px 0px;
+}
+li {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+input {
+  width: 200px;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+}
+
+input:focus {
+  border: 1px solid rgb(98, 98, 238);
+  box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.29);
+  outline: none;
+}
+
+input:invalid {
+  border: 1px solid rgb(230, 22, 22);
+  box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.29);
+  outline: none;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  border-radius: 0.5rem;
+  border: 0;
+  background-color: #596d48;
+  color: white;
+  margin: 35px 0 20px 35px;
+  font-weight: bold;
+}
+
+form p {
+  padding-left: 35px;
+}
+
+form p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #596d48;
+}

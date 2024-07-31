@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Form The Odin Project</title>
+  </head>
+  <body>
+    <script src="./script.js" defer></script>
+    <div class="container">
+      <aside>
+        <div class="background-logo">
+          <img src="./assets/odin-lined.png" alt="the odin project logo" />
+          <span>ODIN</span>
+        </div>
+        <footer>
+          Photo by Hale West on
+          <a
+            href="https://unsplash.com/es/fotos/planta-de-hoja-verde-en-fotografia-de-primer-plano-25xggax4bSA"
+            >Unsplash</a
+          >
+        </footer>
+      </aside>
+      <main>
+        <header>
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+            <br />Sign up <span>now</span> to get started.
+          </p>
+          <p>You <span>know</span> you want to.</p>
+        </header>
+        <form action="">
+          <div class="form-container">
+            <legend>Let's do this!</legend>
+            <ul class="inputs">
+              <li>
+                <label for="first-name">First Name</label
+                ><input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  minlength="3"
+                />
+              </li>
+              <li>
+                <label for="last-name">Last Name</label
+                ><input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  minlength="3"
+                />
+              </li>
+              <li>
+                <label for="email">Email</label
+                ><input class="invalid" type="email" id="email" name="email" />
+              </li>
+              <li>
+                <label for="phone">Phone Number</label
+                ><input
+                  class="invalid"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  minlength="9"
+                />
+              </li>
+              <li>
+                <label for="password">Password</label
+                ><input
+                  class="invalid"
+                  type="password"
+                  id="password"
+                  name="password"
+                  minlength="4"
+                />
+              </li>
+              <li>
+                <label class="invalid" for="confirm-password"
+                  >Confirm Password</label
+                ><input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                  minlength="4"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <button>Create Account</button>
+          <p>Already have an account? <a href="">Log in</a></p>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
